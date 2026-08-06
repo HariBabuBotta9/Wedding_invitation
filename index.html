@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+  <meta name="theme-color" content="#7a1c2b" />
+
+  <!-- SEO -->
+  <title>Hari ❤ Varshini — Telugu Wedding Invitation | 21 August 2026</title>
+  <meta name="description" content="With the blessings of our elders, we invite you to the sacred wedding of Hari and Varshini — Botta & Kosuri families — 20–21 August 2026, Madhu Gardens, West Godavari." />
+  <meta name="keywords" content="Telugu wedding invitation, South Indian wedding, Hari Varshini, Botta Kosuri, Madhu Gardens, Penumantra, West Godavari" />
+  <meta property="og:title" content="Hari ❤ Varshini — Telugu Wedding Invitation" />
+  <meta property="og:description" content="Together with our families, we warmly invite you to celebrate our wedding — 21 August 2026." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Great+Vibes&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       WELCOME / OPENING OVERLAY
+       ============================================================ -->
+  <section class="welcome" id="welcome" aria-label="Welcome">
+    <div class="welcome__ornament welcome__ornament--top" aria-hidden="true">
+      <!-- Mango leaf toranam (top) -->
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="xMidYMid meet">
+        <use href="#toranam" />
+      </svg>
+    </div>
+
+    <div class="welcome__inner">
+      <div class="welcome__mandala" aria-hidden="true">
+        <svg viewBox="0 0 400 400"><use href="#mandala" /></svg>
+      </div>
+
+      <p class="welcome__sanskrit reveal">॥ శ్రీ గణేశాయ నమః ॥</p>
+      <p class="welcome__transliteration reveal" style="--d:.4s">Śrī Gaṇeśāya Namaḥ</p>
+
+      <div class="welcome__divider reveal" style="--d:.7s" aria-hidden="true">
+        <span class="dot"></span>
+        <svg viewBox="0 0 120 12"><use href="#floral-rule"/></svg>
+        <span class="dot"></span>
+      </div>
+
+      <p class="welcome__blessing reveal" style="--d:.9s">
+        With the Blessings of<br /><em>Our Parents, Elders &amp; Well-Wishers</em>
+      </p>
+
+      <h1 class="welcome__names reveal" style="--d:1.2s">
+        <span class="name">Hari</span>
+        <span class="heart" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><use href="#heart"/></svg>
+        </span>
+        <span class="name">Varshini</span>
+      </h1>
+
+      <p class="welcome__invite reveal" style="--d:1.5s">
+        Together with our families, we warmly invite you<br/>to celebrate our wedding.
+      </p>
+
+      <button class="btn btn--gold reveal" style="--d:1.8s" id="openInvitationBtn" type="button">
+        <span>Open Invitation</span>
+        <svg class="btn__ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+
+    <div class="welcome__ornament welcome__ornament--bottom" aria-hidden="true">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="xMidYMid meet">
+        <use href="#toranam" />
+      </svg>
+    </div>
+
+    <!-- Deepams at corners -->
+    <div class="deepam deepam--bl" aria-hidden="true"><svg viewBox="0 0 80 120"><use href="#deepam"/></svg></div>
+    <div class="deepam deepam--br" aria-hidden="true"><svg viewBox="0 0 80 120"><use href="#deepam"/></svg></div>
+  </section>
+
+  <!-- ============================================================
+       MAIN SITE (revealed after welcome)
+       ============================================================ -->
+  <main class="site" id="site" hidden>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#hero" class="nav__brand">
+        <span class="nav__mono">H</span>
+        <span class="nav__amp">&amp;</span>
+        <span class="nav__mono">V</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z"/></svg>
+        </button>
+        <button id="navToggle" class="icon-btn nav__burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero" id="hero">
+      <canvas class="petals" id="petals" aria-hidden="true"></canvas>
+      <div class="hero__particles" aria-hidden="true"></div>
+
+      <div class="hero__frame" aria-hidden="true">
+        <div class="hero__toranam hero__toranam--top">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none"><use href="#toranam" /></svg>
+        </div>
+      </div>
+
+      <div class="hero__inner">
+        <p class="eyebrow reveal">Traditional Telugu Hindu Wedding</p>
+
+        <h2 class="hero__names reveal" style="--d:.2s">
+          <span>Hari</span>
+          <span class="hero__heart" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><use href="#heart"/></svg>
+          </span>
+          <span>Varshini</span>
+        </h2>
+
+        <p class="hero__families reveal" style="--d:.4s">
+          <span>Botta</span>
+          <span class="hero__amp" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><use href="#heart"/></svg>
+          </span>
+          <span>Kosuri</span>
+        </p>
+
+        <p class="hero__date reveal" style="--d:.55s">20 &ndash; 21 August 2026</p>
+
+        <!-- Countdown -->
+        <div class="countdown reveal" style="--d:.7s" id="countdown" aria-label="Countdown to wedding">
+          <div class="cd__unit"><span class="cd__num" data-cd="d">00</span><span class="cd__lbl">Days</span></div>
+          <div class="cd__unit"><span class="cd__num" data-cd="h">00</span><span class="cd__lbl">Hours</span></div>
+          <div class="cd__unit"><span class="cd__num" data-cd="m">00</span><span class="cd__lbl">Minutes</span></div>
+          <div class="cd__unit"><span class="cd__num" data-cd="s">00</span><span class="cd__lbl">Seconds</span></div>
+        </div>
+
+        <div class="hero__actions reveal" style="--d:.9s">
+          <a href="#rsvp" class="btn btn--gold"><span>Save the Date</span></a>
+          <button class="btn btn--ghost" id="addCalendarBtn" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M7 3v4M17 3v4M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/></svg>
+            <span>Add to Calendar</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero__frame hero__frame--bottom" aria-hidden="true">
+        <div class="hero__toranam hero__toranam--bottom">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none"><use href="#toranam" /></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         STORY / BRIDE & GROOM
+         ============================================================ -->
+    <section class="story" id="story">
+      <header class="section__head reveal">
+        <p class="eyebrow">The Sacred Union</p>
+        <h2 class="section__title">Bride &amp; Groom</h2>
+        <div class="rule" aria-hidden="true"><svg viewBox="0 0 200 12"><use href="#floral-rule"/></svg></div>
+      </header>
+
+      <div class="story__grid">
+        <article class="person reveal">
+          <div class="person__frame">
+            <img src="images/groom.jpg" alt="Portrait of Hari, the groom" loading="lazy" />
+            <div class="person__ring" aria-hidden="true"></div>
+          </div>
+          <p class="person__label">The Groom</p>
+          <h3 class="person__name">Hari</h3>
+          <p class="person__family">Son of the Botta Family</p>
+        </article>
+
+        <div class="story__center reveal" style="--d:.15s" aria-hidden="true">
+          <div class="story__lotus"><svg viewBox="0 0 120 120"><use href="#lotus"/></svg></div>
+          <div class="story__amp">
+            <svg viewBox="0 0 32 32"><use href="#heart"/></svg>
+          </div>
+          <div class="story__lotus story__lotus--flip"><svg viewBox="0 0 120 120"><use href="#lotus"/></svg></div>
+        </div>
+
+        <article class="person reveal" style="--d:.3s">
+          <div class="person__frame">
+            <img src="images/bride.jpg" alt="Portrait of Varshini, the bride" loading="lazy" />
+            <div class="person__ring" aria-hidden="true"></div>
+          </div>
+          <p class="person__label">The Bride</p>
+          <h3 class="person__name">Varshini</h3>
+          <p class="person__family">Daughter of the Kosuri Family</p>
+        </article>
+      </div>
+
+      <figure class="story__couple reveal">
+        <div class="couple__frame">
+          <img src="images/couple.jpg" alt="Hari and Varshini together" loading="lazy" />
+        </div>
+        <figcaption class="story__couple-caption">
+          <span class="script">and so the two families become one</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ============================================================
+         INVITATION MESSAGE
+         ============================================================ -->
+    <section class="invite" id="invite">
+      <div class="invite__ornament invite__ornament--l" aria-hidden="true">
+        <svg viewBox="0 0 80 400"><use href="#vine"/></svg>
+      </div>
+      <div class="invite__ornament invite__ornament--r" aria-hidden="true">
+        <svg viewBox="0 0 80 400"><use href="#vine"/></svg>
+      </div>
+
+      <div class="invite__card reveal">
+        <div class="invite__corner invite__corner--tl" aria-hidden="true"><svg viewBox="0 0 60 60"><use href="#corner"/></svg></div>
+        <div class="invite__corner invite__corner--tr" aria-hidden="true"><svg viewBox="0 0 60 60"><use href="#corner"/></svg></div>
+        <div class="invite__corner invite__corner--bl" aria-hidden="true"><svg viewBox="0 0 60 60"><use href="#corner"/></svg></div>
+        <div class="invite__corner invite__corner--br" aria-hidden="true"><svg viewBox="0 0 60 60"><use href="#corner"/></svg></div>
+
+        <p class="eyebrow">An Invitation</p>
+        <div class="rule" aria-hidden="true"><svg viewBox="0 0 200 12"><use href="#floral-rule"/></svg></div>
+
+        <p class="invite__families">
+          <span>Botta Family</span>
+          <span class="invite__amp" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#heart"/></svg></span>
+          <span>Kosuri Family</span>
+        </p>
+
+        <p class="invite__body">
+          With the blessings of the Almighty and our beloved parents, elders, relatives, and friends,
+          the <em>Botta Family</em> and the <em>Kosuri Family</em> cordially invite you and your family
+          to celebrate the sacred union of
+          <strong>Hari</strong> and <strong>Varshini</strong>.
+          Your gracious presence and heartfelt blessings will make this joyous occasion even more
+          memorable as we begin a beautiful new chapter of our lives together.
+        </p>
+
+        <p class="invite__signoff">— With Love &amp; Reverence</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EVENTS
+         ============================================================ -->
+    <section class="events" id="events">
+      <header class="section__head reveal">
+        <p class="eyebrow">Join Us</p>
+        <h2 class="section__title">Wedding Events</h2>
+        <div class="rule" aria-hidden="true"><svg viewBox="0 0 200 12"><use href="#floral-rule"/></svg></div>
+      </header>
+
+      <div class="events__grid">
+        <article class="event-card reveal">
+          <div class="event-card__ornament" aria-hidden="true">
+            <svg viewBox="0 0 80 80"><use href="#deepam-small"/></svg>
+          </div>
+          <p class="event-card__kicker">Evening of Celebration</p>
+          <h3 class="event-card__title">Reception</h3>
+          <div class="event-card__meta">
+            <div>
+              <span class="k">Date</span>
+              <span class="v">20 August 2026</span>
+            </div>
+            <div>
+              <span class="k">Time</span>
+              <span class="v">7:00 PM</span>
+            </div>
+            <div>
+              <span class="k">Day</span>
+              <span class="v">Thursday</span>
+            </div>
+          </div>
+          <p class="event-card__note">Dinner, music &amp; blessings for the couple.</p>
+        </article>
+
+        <article class="event-card event-card--primary reveal" style="--d:.15s">
+          <div class="event-card__ornament" aria-hidden="true">
+            <svg viewBox="0 0 80 80"><use href="#deepam-small"/></svg>
+          </div>
+          <p class="event-card__kicker">Sacred Muhurtham</p>
+          <h3 class="event-card__title">Wedding Ceremony</h3>
+          <div class="event-card__meta">
+            <div>
+              <span class="k">Date</span>
+              <span class="v">21 August 2026</span>
+            </div>
+            <div>
+              <span class="k">Muhurtham</span>
+              <span class="v">3:56 AM</span>
+            </div>
+            <div>
+              <span class="k">Day</span>
+              <span class="v">Friday</span>
+            </div>
+          </div>
+          <p class="event-card__note">The sacred vows, exchanged under the auspicious hour.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VENUE
+         ============================================================ -->
+    <section class="venue" id="venue">
+      <header class="section__head reveal">
+        <p class="eyebrow">The Location</p>
+        <h2 class="section__title">Venue</h2>
+        <div class="rule" aria-hidden="true"><svg viewBox="0 0 200 12"><use href="#floral-rule"/></svg></div>
+      </header>
+
+      <div class="venue__grid">
+        <div class="venue__info reveal">
+          <h3 class="venue__name">Madhu Gardens</h3>
+          <address class="venue__addr">
+            Brahman Cheruvu Road<br/>
+            Penumantra Mandal<br/>
+            West Godavari District<br/>
+            Andhra Pradesh &ndash; 534238
+          </address>
+
+          <div class="venue__actions">
+            <a class="btn btn--gold" id="directionsBtn" href="https://www.google.com/maps/dir/?api=1&destination=Madhu+Gardens+Brahman+Cheruvu+Road+Penumantra+West+Godavari+534238" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 22s-7-7.58-7-13a7 7 0 1 1 14 0c0 5.42-7 13-7 13Z"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              <span>Get Directions</span>
+            </a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=Madhu+Gardens+Brahman+Cheruvu+Road+Penumantra+West+Godavari+534238" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></svg>
+              <span>Open in Google Maps</span>
+            </a>
+            <button class="btn btn--ghost" id="copyAddressBtn" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M9 9h11v11H9zM4 4h11v3M4 4v11h3"/></svg>
+              <span id="copyAddressLabel">Copy Address</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="venue__map reveal" style="--d:.15s">
+          <div class="venue__map-frame">
+            <iframe
+              title="Madhu Gardens venue location"
+              src="https://www.google.com/maps?q=Madhu+Gardens+Brahman+Cheruvu+Road+Penumantra+West+Godavari+534238&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALLERY
+         ============================================================ -->
+    <section class="gallery" id="gallery">
+      <header class="section__head reveal">
+        <p class="eyebrow">Memories</p>
+        <h2 class="section__title">Gallery</h2>
+        <div class="rule" aria-hidden="true"><svg viewBox="0 0 200 12"><use href="#floral-rule"/></svg></div>
+      </header>
+
+      <div class="gallery__grid">
+        <button class="gtile reveal" data-src="images/gallery1.jpg" data-caption="Together" style="--d:0s">
+          <img src="images/gallery1.jpg" alt="Gallery photograph 1" loading="lazy"/>
+        </button>
+        <button class="gtile reveal" data-src="images/gallery2.jpg" data-caption="Blessings" style="--d:.05s">
+          <img src="images/gallery2.jpg" alt="Gallery photograph 2" loading="lazy"/>
+        </button>
+        <button class="gtile reveal" data-src="images/gallery3.jpg" data-caption="Traditions" style="--d:.1s">
+          <img src="images/gallery3.jpg" alt="Gallery photograph 3" loading="lazy"/>
+        </button>
+        <button class="gtile reveal" data-src="images/gallery4.jpg" data-caption="Family" style="--d:.15s">
+          <img src="images/gallery4.jpg" alt="Gallery photograph 4" loading="lazy"/>
+        </button>
+        <button class="gtile reveal" data-src="images/gallery5.jpg" data-caption="Rituals" style="--d:.2s">
+          <img src="images/gallery5.jpg" alt="Gallery photograph 5" loading="lazy"/>
+        </button>
+        <button class="gtile reveal" data-src="images/gallery6.jpg" data-caption="Joy" style="--d:.25s">
+          <img src="images/gallery6.jpg" alt="Gallery photograph 6" loading="lazy"/>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RSVP
+         ============================================================ -->
+    <section class="rsvp" id="rsvp">
+      <header class="section__head reveal">
+        <p class="eyebrow">Kindly Respond</p>
+        <h2 class="section__title">RSVP</h2>
+        <div class="rule" aria-hidden="true"><svg viewBox="0 0 200 12"><use href="#floral-rule"/></svg></div>
+        <p class="section__lede">Your presence is our blessing. Please let us know if you can join us.</p>
+      </header>
+
+      <form class="rsvp__form reveal" id="rsvpForm" novalidate>
+        <div class="field">
+          <label for="rsvpName">Full Name</label>
+          <input id="rsvpName" name="name" type="text" required autocomplete="name" placeholder="Your full name" />
+        </div>
+
+        <div class="field">
+          <label for="rsvpPhone">Phone Number</label>
+          <input id="rsvpPhone" name="phone" type="tel" required autocomplete="tel" placeholder="+91 xxxxx xxxxx" />
+        </div>
+
+        <div class="field">
+          <label for="rsvpEmail">Email Address</label>
+          <input id="rsvpEmail" name="email" type="email" required autocomplete="email" placeholder="you@example.com" />
+        </div>
+
+        <div class="field">
+          <label for="rsvpGuests">Number of Guests</label>
+          <input id="rsvpGuests" name="guests" type="number" min="1" max="20" value="1" required />
+        </div>
+
+        <div class="field field--full">
+          <label>Will You Attend?</label>
+          <div class="segmented" role="radiogroup" aria-label="Will you attend?">
+            <label class="seg">
+              <input type="radio" name="attending" value="Yes, with joy" required checked/>
+              <span>Yes, with joy</span>
+            </label>
+            <label class="seg">
+              <input type="radio" name="attending" value="Sending blessings from afar"/>
+              <span>Sending blessings from afar</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field field--full">
+          <label for="rsvpMessage">Blessings / Message</label>
+          <textarea id="rsvpMessage" name="message" rows="4" placeholder="A few kind words for the couple…"></textarea>
+        </div>
+
+        <div class="field field--full rsvp__submit">
+          <button class="btn btn--gold" type="submit" id="rsvpSubmit">
+            <span>Send Blessings</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+
+        <div class="rsvp__status" id="rsvpStatus" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="foot">
+      <div class="foot__ornament" aria-hidden="true">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none"><use href="#toranam" /></svg>
+      </div>
+
+      <div class="foot__inner">
+        <div class="foot__names">
+          <span>Hari</span>
+          <span class="foot__heart" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#heart"/></svg></span>
+          <span>Varshini</span>
+        </div>
+        <p class="foot__date">21 August 2026 · Madhu Gardens</p>
+
+        <div class="foot__share">
+          <button class="chip" id="whatsappShare" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.5 3.5A11.9 11.9 0 0 0 3.4 20.3L2 22l1.75-1.34A11.9 11.9 0 1 0 20.5 3.5Zm-8.5 18a9.5 9.5 0 0 1-4.85-1.33l-.35-.2-2.85.75.77-2.78-.23-.36A9.5 9.5 0 1 1 12 21.5Zm5.24-7.14c-.29-.14-1.7-.83-1.96-.93s-.45-.14-.65.15c-.19.29-.75.93-.92 1.12-.17.19-.34.22-.63.07a7.8 7.8 0 0 1-2.3-1.42 8.6 8.6 0 0 1-1.59-1.98c-.17-.29 0-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.09-.19.05-.36-.02-.5-.07-.15-.65-1.57-.9-2.15-.23-.56-.47-.48-.65-.49h-.55a1.06 1.06 0 0 0-.77.36 3.24 3.24 0 0 0-1.01 2.41c0 1.42 1.03 2.79 1.18 2.98.14.19 2.03 3.11 4.93 4.36a16.7 16.7 0 0 0 1.65.61 3.96 3.96 0 0 0 1.82.12 2.98 2.98 0 0 0 1.96-1.39 2.42 2.42 0 0 0 .17-1.39c-.07-.12-.26-.19-.55-.34Z"/></svg>
+            <span>Share on WhatsApp</span>
+          </button>
+          <button class="chip" id="copyLink" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
+            <span id="copyLinkLabel">Copy Invitation Link</span>
+          </button>
+          <button class="chip" id="downloadIcs" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0-4-4m4 4 4-4M4 20h16"/></svg>
+            <span>Download .ics</span>
+          </button>
+        </div>
+
+        <p class="foot__legal">
+          Made with love for the Botta &amp; Kosuri families · © 2026
+        </p>
+      </div>
+    </footer>
+
+    <!-- Floating music player -->
+    <aside class="player" id="player" aria-label="Background music player">
+      <button class="player__toggle" id="playPause" aria-label="Play music" title="Play music">
+        <svg class="ico ico--play" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+        <svg class="ico ico--pause" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+      <div class="player__meta">
+        <span class="player__title">Wedding Melody</span>
+        <div class="player__progress"><div class="player__bar" id="playerBar"></div></div>
+      </div>
+      <button class="player__vol" id="volBtn" aria-label="Volume" title="Volume">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 10v4h4l5 4V6L8 10H4z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M16 8c1.5 1.5 1.5 6.5 0 8M19 5c3 3 3 11 0 14"/></svg>
+      </button>
+      <input type="range" min="0" max="1" step="0.01" value="0.6" id="volSlider" aria-label="Volume level"/>
+      <audio id="audio" src="music/wedding.mp3" preload="none"></audio>
+    </aside>
+
+    <!-- Back to top -->
+    <button class="totop" id="toTop" aria-label="Back to top" title="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M6 15l6-6 6 6"/></svg>
+    </button>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" hidden aria-hidden="true">
+      <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous">‹</button>
+      <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next">›</button>
+      <figure class="lightbox__stage">
+        <img id="lbImg" alt="" />
+        <figcaption id="lbCap"></figcaption>
+      </figure>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  </main>
+
+  <!-- ============================================================
+       SHARED SVG SYMBOLS (motifs)
+       ============================================================ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <!-- Mango-leaf toranam: alternating leaves hanging from string -->
+      <symbol id="toranam" viewBox="0 0 1200 120">
+        <path d="M0 12 H1200" stroke="currentColor" stroke-width="1" fill="none" opacity=".55"/>
+        <g fill="currentColor">
+          <!-- one leaf group repeated -->
+          <g id="leaf-unit">
+            <path d="M0 12 Q12 30 22 60 Q30 90 24 108 Q12 96 6 78 Q0 54 0 12Z" opacity=".9"/>
+            <path d="M0 12 Q10 40 18 90" stroke="rgba(0,0,0,.25)" stroke-width=".8" fill="none"/>
+          </g>
+        </g>
+        <!-- We'll place many leaves via <use> -->
+        <g fill="currentColor">
+          <use href="#leaf-unit" x="20"/>
+          <use href="#leaf-unit" x="60"/>
+          <use href="#leaf-unit" x="100"/>
+          <use href="#leaf-unit" x="140"/>
+          <use href="#leaf-unit" x="180"/>
+          <use href="#leaf-unit" x="220"/>
+          <use href="#leaf-unit" x="260"/>
+          <use href="#leaf-unit" x="300"/>
+          <use href="#leaf-unit" x="340"/>
+          <use href="#leaf-unit" x="380"/>
+          <use href="#leaf-unit" x="420"/>
+          <use href="#leaf-unit" x="460"/>
+          <use href="#leaf-unit" x="500"/>
+          <use href="#leaf-unit" x="540"/>
+          <use href="#leaf-unit" x="580"/>
+          <use href="#leaf-unit" x="620"/>
+          <use href="#leaf-unit" x="660"/>
+          <use href="#leaf-unit" x="700"/>
+          <use href="#leaf-unit" x="740"/>
+          <use href="#leaf-unit" x="780"/>
+          <use href="#leaf-unit" x="820"/>
+          <use href="#leaf-unit" x="860"/>
+          <use href="#leaf-unit" x="900"/>
+          <use href="#leaf-unit" x="940"/>
+          <use href="#leaf-unit" x="980"/>
+          <use href="#leaf-unit" x="1020"/>
+          <use href="#leaf-unit" x="1060"/>
+          <use href="#leaf-unit" x="1100"/>
+          <use href="#leaf-unit" x="1140"/>
+          <use href="#leaf-unit" x="1180"/>
+        </g>
+        <!-- little bead accents between leaves -->
+        <g fill="currentColor" opacity=".8">
+          <circle cx="40" cy="14" r="2"/><circle cx="80" cy="14" r="2"/><circle cx="120" cy="14" r="2"/>
+          <circle cx="160" cy="14" r="2"/><circle cx="200" cy="14" r="2"/><circle cx="240" cy="14" r="2"/>
+          <circle cx="280" cy="14" r="2"/><circle cx="320" cy="14" r="2"/><circle cx="360" cy="14" r="2"/>
+          <circle cx="400" cy="14" r="2"/><circle cx="440" cy="14" r="2"/><circle cx="480" cy="14" r="2"/>
+          <circle cx="520" cy="14" r="2"/><circle cx="560" cy="14" r="2"/><circle cx="600" cy="14" r="2"/>
+          <circle cx="640" cy="14" r="2"/><circle cx="680" cy="14" r="2"/><circle cx="720" cy="14" r="2"/>
+          <circle cx="760" cy="14" r="2"/><circle cx="800" cy="14" r="2"/><circle cx="840" cy="14" r="2"/>
+          <circle cx="880" cy="14" r="2"/><circle cx="920" cy="14" r="2"/><circle cx="960" cy="14" r="2"/>
+          <circle cx="1000" cy="14" r="2"/><circle cx="1040" cy="14" r="2"/><circle cx="1080" cy="14" r="2"/>
+          <circle cx="1120" cy="14" r="2"/><circle cx="1160" cy="14" r="2"/>
+        </g>
+      </symbol>
+
+      <!-- Mandala (concentric petals) -->
+      <symbol id="mandala" viewBox="0 0 400 400">
+        <g fill="none" stroke="currentColor" stroke-width="1">
+          <circle cx="200" cy="200" r="180" opacity=".35"/>
+          <circle cx="200" cy="200" r="150" opacity=".45"/>
+          <circle cx="200" cy="200" r="120" opacity=".55"/>
+          <circle cx="200" cy="200" r="90" opacity=".65"/>
+          <circle cx="200" cy="200" r="55" opacity=".75"/>
+          <circle cx="200" cy="200" r="20" opacity=".85"/>
+        </g>
+        <g fill="currentColor" opacity=".55">
+          <!-- 16-fold petals -->
+          <g id="mandala-petal">
+            <path d="M200 40 Q210 100 200 160 Q190 100 200 40Z"/>
+          </g>
+        </g>
+        <g fill="currentColor" opacity=".5">
+          <use href="#mandala-petal"/>
+          <use href="#mandala-petal" transform="rotate(22.5 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(45 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(67.5 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(90 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(112.5 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(135 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(157.5 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(180 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(202.5 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(225 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(247.5 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(270 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(292.5 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(315 200 200)"/>
+          <use href="#mandala-petal" transform="rotate(337.5 200 200)"/>
+        </g>
+        <g fill="currentColor" opacity=".7">
+          <circle cx="200" cy="200" r="6"/>
+        </g>
+      </symbol>
+
+      <!-- Floral rule -->
+      <symbol id="floral-rule" viewBox="0 0 200 12">
+        <line x1="0" y1="6" x2="80" y2="6" stroke="currentColor" stroke-width="1"/>
+        <line x1="120" y1="6" x2="200" y2="6" stroke="currentColor" stroke-width="1"/>
+        <g fill="currentColor">
+          <circle cx="88" cy="6" r="1.5"/>
+          <circle cx="112" cy="6" r="1.5"/>
+          <path d="M100 0 L106 6 L100 12 L94 6 Z" opacity=".9"/>
+        </g>
+      </symbol>
+
+      <!-- Heart -->
+      <symbol id="heart" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M16 28s-11-7.5-11-15a6 6 0 0 1 11-3 6 6 0 0 1 11 3c0 7.5-11 15-11 15Z"/>
+      </symbol>
+
+      <!-- Lotus -->
+      <symbol id="lotus" viewBox="0 0 120 120">
+        <g fill="currentColor">
+          <path d="M60 100 Q30 90 20 60 Q45 65 60 90Z" opacity=".7"/>
+          <path d="M60 100 Q90 90 100 60 Q75 65 60 90Z" opacity=".7"/>
+          <path d="M60 100 Q40 70 40 40 Q60 55 60 90Z" opacity=".85"/>
+          <path d="M60 100 Q80 70 80 40 Q60 55 60 90Z" opacity=".85"/>
+          <path d="M60 100 Q60 60 60 30 Q66 65 60 100Z" opacity="1"/>
+        </g>
+      </symbol>
+
+      <!-- Vine (side ornament) -->
+      <symbol id="vine" viewBox="0 0 80 400">
+        <path d="M40 0 C 20 60, 60 120, 40 180 C 20 240, 60 300, 40 400" fill="none" stroke="currentColor" stroke-width="1" opacity=".75"/>
+        <g fill="currentColor" opacity=".85">
+          <path d="M40 40 q10 4 14 16 q-14 -2 -14 -16Z"/>
+          <path d="M40 100 q-10 4 -14 16 q14 -2 14 -16Z"/>
+          <path d="M40 160 q10 4 14 16 q-14 -2 -14 -16Z"/>
+          <path d="M40 220 q-10 4 -14 16 q14 -2 14 -16Z"/>
+          <path d="M40 280 q10 4 14 16 q-14 -2 -14 -16Z"/>
+          <path d="M40 340 q-10 4 -14 16 q14 -2 14 -16Z"/>
+        </g>
+      </symbol>
+
+      <!-- Corner ornament -->
+      <symbol id="corner" viewBox="0 0 60 60">
+        <path d="M0 60 V20 A20 20 0 0 1 20 0 H60" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M6 60 V24 A18 18 0 0 1 24 6 H60" fill="none" stroke="currentColor" stroke-width=".6" opacity=".7"/>
+        <circle cx="20" cy="20" r="2" fill="currentColor"/>
+        <path d="M20 20 L14 14 M20 20 L26 14 M20 20 L14 26" stroke="currentColor" stroke-width=".8"/>
+      </symbol>
+
+      <!-- Deepam (oil lamp) -->
+      <symbol id="deepam" viewBox="0 0 80 120">
+        <!-- flame -->
+        <path d="M40 6 C 46 22, 46 34, 40 44 C 34 34, 34 22, 40 6Z" fill="url(#flameGrad)"/>
+        <!-- lamp body -->
+        <ellipse cx="40" cy="60" rx="30" ry="8" fill="currentColor"/>
+        <path d="M14 60 Q 40 90 66 60 Z" fill="currentColor"/>
+        <!-- base -->
+        <rect x="24" y="88" width="32" height="4" rx="2" fill="currentColor"/>
+        <rect x="18" y="96" width="44" height="6" rx="2" fill="currentColor"/>
+        <rect x="14" y="106" width="52" height="8" rx="3" fill="currentColor"/>
+        <defs>
+          <linearGradient id="flameGrad" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#ffe8a0"/>
+            <stop offset=".6" stop-color="#ffb84a"/>
+            <stop offset="1" stop-color="#c8621f"/>
+          </linearGradient>
+        </defs>
+      </symbol>
+
+      <!-- Deepam small (for cards) -->
+      <symbol id="deepam-small" viewBox="0 0 80 80">
+        <path d="M40 8 C 46 20, 46 30, 40 38 C 34 30, 34 20, 40 8Z" fill="url(#flameGrad)"/>
+        <ellipse cx="40" cy="50" rx="24" ry="6" fill="currentColor"/>
+        <path d="M18 50 Q 40 74 62 50 Z" fill="currentColor"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
